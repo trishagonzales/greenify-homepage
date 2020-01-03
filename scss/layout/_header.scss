@@ -1,0 +1,39 @@
+header {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+  #menu-toggler,
+  .menu-icon {
+    display: none;
+  }
+
+  .nav-menu {
+    ul {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}
+
+@media only screen and (max-width: $breakpoint-sm) {
+  header {
+    display: flex;
+    flex-flow: row;
+    background: $primary;
+    padding: 10px;
+
+    .brand {
+      margin-right: auto;
+    }
+
+    .menu-icon {
+      display: inline;
+    }
+
+    .nav-menu {
+      display: block;
+      visibility: hidden;
+    }
+  }
+}

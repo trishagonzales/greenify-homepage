@@ -1,0 +1,32 @@
+@import '../base/variables';
+@import '../base/mixins';
+
+@mixin button {
+  padding: 0.6em 1em;
+  margin: 0.3em;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 5px;
+}
+
+.btn-contained {
+  @include button;
+  color: white;
+  background-color: $primary;
+  border-color: $primary;
+  box-shadow: 0 0 6 $primary;
+}
+
+.btn-outlined {
+  @include button;
+  color: $primary;
+  background-color: none;
+  border-color: $foreground-light;
+}
+
+.btn-text {
+  @include button;
+  color: $primary;
+  background: none;
+  border: none;
+}

@@ -1,0 +1,19 @@
+@import '../base/variables';
+
+$baseSize: 50px;
+
+.product-card {
+  width: $baseSize;
+  height: auto;
+
+  img {
+    width: inherit;
+    height: $baseSize;
+    object-fit: cover;
+  }
+
+  p,
+  button {
+    display: block;
+  }
+}
