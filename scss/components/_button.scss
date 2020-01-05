@@ -1,30 +1,28 @@
-@import '../base/variables';
-@import '../base/mixins';
-
 @mixin button {
-  padding: 0.6em 1em;
+  padding: 0.7em 1.2em;
   margin: 0.3em;
   border-width: 3px;
   border-style: solid;
   border-radius: 5px;
 }
 
-.btn-contained {
+.btn-primary {
   @include button;
   color: white;
   background-color: $primary;
   border-color: $primary;
+  border-radius: 25px;
   box-shadow: 0 0 6 $primary;
 }
 
-.btn-outlined {
+.btn-secondary {
   @include button;
   color: $primary;
   background-color: none;
   border-color: $foreground-light;
 }
 
-.btn-text {
+.btn-tertiary {
   @include button;
   color: $primary;
   background: none;

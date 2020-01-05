@@ -1,0 +1,35 @@
+header {
+  .brand {
+    font-family: 'Redressed', sans-serif;
+    font-size: 1.7rem;
+    color: $foreground-default;
+    margin: .6em
+  }
+
+  .nav-item {
+    font-family: 'Tw Cen MT';
+    padding: 0 1.2em;
+    padding-bottom: .7em;
+  }
+}
+
+.showcase {
+  h1 {
+    font-size: 3rem;
+  }
+
+  .btn-primary {
+    font-size: 1rem;
+    padding: 0.8em 1.5em;
+    box-shadow: 0px 0px 20px #1e2e1cab;
+  }
+}
+
+@media only screen and (max-width: $breakpoint-md) {
+  header {
+    .brand {
+      font-size: 1.5rem;
+      color: rgba(255, 255, 255, 0.884);
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.showcase {
+  width: 100vw;
+  height: 90vh;
+  background-image: url(../../img/showcase/showcase-image.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  position: relative;
+
+  .showcase-title {
+    min-width: 80%;
+    max-width: 100%;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .btn-primary {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

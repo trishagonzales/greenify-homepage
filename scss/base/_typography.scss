@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Redressed&display=swap');
 
-@import './variables';
+@import '../abstracts/variables';
 
 @mixin baseText {
   font-family: 'Roboto', sans-serif;
@@ -12,7 +12,7 @@
 
 @mixin headerText {
   font-family: 'Poppins', sans-serif;
-  font-size: 3rem;
+  font-size: 2rem;
   color: $foreground-default;
 }
 
@@ -31,10 +31,4 @@ a:link,
 a:visited,
 a:hover {
   @include baseText;
-}
-
-.brand {
-  font-family: 'Redressed', sans-serif;
-  font-size: 2rem;
-  color: $foreground-default;
 }
