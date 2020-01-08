@@ -1,0 +1,43 @@
+.newsletter {
+  @include hoizontalCenter;
+  @include marginTop;
+  width: 100%;
+  background: rgb(240, 240, 240);
+  padding: 5% 0;
+
+  &__title {
+    margin-bottom: 1.5em;
+  }
+  
+  .form {
+    display: flex;
+    width: 400px;
+    
+    &__input {
+      font-size: 1rem;
+      flex: 80%;
+      padding: .5em 1em;
+      border: 2px solid $primary;
+    }
+    
+    &__btn {
+      font-size: 1rem;
+      flex: 1fr;
+      padding: .5em 1em;
+      color: white;
+      background: $primary;
+      border: 2px solid $primary;
+    }
+  }
+}
+
+@media only screen and (max-width: $breakpoint-sm) {
+  .form {
+    flex-direction: column;
+    
+    &__input, &__btn {
+      width: auto;
+      margin: .3em 0;
+    }
+  }
+}

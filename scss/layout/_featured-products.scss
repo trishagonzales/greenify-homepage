@@ -1,0 +1,12 @@
+.featured-products {
+  @include hoizontalCenter;
+  @include marginTop;
+
+  &__title { 
+    margin-bottom: 25px;
+  }
+
+  .btn { 
+    margin-top: 30px;
+  }
+}

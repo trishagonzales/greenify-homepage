@@ -4,8 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "npm run build-sass && npm run watch-sass",
+    "build-sass": "node-sass scss/ -o css/",
+    "watch-sass": "node-sass -w scss/ -o css/"
   },
   "author": "Trisha Gonzales",
-  "license": "MIT"
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.13.0"
+  }
 }

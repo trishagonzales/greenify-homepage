@@ -2,8 +2,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Redressed&display=swap');
 
-@import '../abstracts/variables';
-
 @mixin baseText {
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
@@ -27,8 +25,36 @@ h6 {
 
 p,
 li,
-a:link,
-a:visited,
-a:hover {
+a {
   @include baseText;
+}
+
+.navigation {
+  &__logo {
+    font-family: 'Redressed', sans-serif;
+    font-size: 1.6rem;
+  }
+
+  .menu {
+    &__item:hover {
+      background-color: rgba(245, 245, 245, 0.644);
+      cursor: pointer;
+      @include transitionBackground;
+    }
+
+    .active {
+      border-bottom: 2px solid $primary;
+    }
+  }
+}
+
+@media only screen and (max-width: $breakpoint-md) {
+  .navigation {
+    .menu {
+      .active {
+        border: none;
+        background-color: rgba(16, 104, 16, 0.171);
+      }
+    }
+  }
 }

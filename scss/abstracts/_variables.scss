@@ -1,6 +1,5 @@
 //  COLORS
 $deepGreen: #1e2e1c;
-$leafyGreen: #4f7302;
 $redSoil: #732e07;
 $lightGrey: #e4e4e4;
 $grey: #d5d2d9;
@@ -18,11 +17,13 @@ $foreground-dark: $darkGrey;
 $background-default: $lightGrey;
 $background-light: white;
 
-//  BORDER
-$borderRadius: 10;
+//  CARD BORDER RADIUS
+$cardBorderRadius: 10px;
+
+//  BOX-SHADOW
+$boxShadow: rgba(18, 61, 7, 0.637);
 
 //  RESPONSIVE BREAKPOINTS
 $breakpoint-sm: 576px;
 $breakpoint-md: 768px;
 $breakpoint-lg: 992px;
-$breakpoint-xl: 1200px;

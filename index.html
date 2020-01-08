@@ -1,189 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Greenify</title>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./scss/main.css">
-  </head>
-  <body>
 
-    <!--  HEADER  -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Greenify</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
 
-    <header>
-      <a class="brand">Greenify</a>
+<body>
+  <!--  NAVIGATION  -->
 
-      <nav class="nav-menu">
-        <input type="checkbox" id="menu-toggler">
-        <label for="menu-toggler">
-          <i class="fas fa-bars fa-2x menu-icon" aria-hidden="true"></i>
-        </label>
+  <nav class="navigation">
+    <a class="navigation__logo">Greenify</a>
 
-        <ul>
-          <li class="nav-item"><a href="index.html">Home</a></li>
-          <li class="nav-item"><a href="#">Collections</a></li>
-          <li class="nav-item"><a href="#">Featured</a></li>
-          <li class="nav-item"><a href="#">About</a></li>
-          <li class="nav-item"><a href="#">Categories</a></li>
-          <li class="nav-item"><a href="#">Blog</a></li>
-          <li class="nav-item"><a href="#">Contact Us</a></li>
-        </ul>
-      </nav class="nav-menu">
-    </header>
+    <input type="checkbox" id="menu-toggler" />
 
-    
-    <!--  SHOWCASE  -->
+    <label class="navigation__menu-icon" for="menu-toggler">
+      <i class="fas fa-bars fa-2x" aria-hidden="true"></i>
+    </label>
 
-    <section class="section showcase">
-      <h1 class="showcase-title">PLANTS FOR INTERIOR</h1>
-      <button class="btn-primary" type="button">SHOP NOW</button>
-    </section>
+    <ul class="menu">
+      <li class="menu__item active"><a href="#">Home</a></li>
+      <li class="menu__item"><a href="#">Collections</a></li>
+      <li class="menu__item"><a href="#">Featured</a></li>
+      <li class="menu__item"><a href="#">About</a></li>
+      <li class="menu__item"><a href="#">Categories</a></li>
+      <li class="menu__item"><a href="#">Blog</a></li>
+      <li class="menu__item"><a href="#">Contact Us</a></li>
+    </ul>
+  </nav>
 
+  <!--  SHOWCASE  -->
 
-    <!--  OUR STORE  -->
+  <section class="showcase">
+    <h1 class="showcase__title">PLANTS FOR INTERIOR</h1>
+    <button class="btn btn-primary" type="button">SHOP NOW</button>
+  </section>
 
-    <section class="section our-store">
-      <h2 class="section-title">OUR STORE</h2>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi expedita dolore atque veniam minima natus!</p>
-      <button class="btn-primary" type="button">SHOP NOW</button>
+  <!--  OUR STORE  -->
 
-      <img src="./img/our store/store-1.png" alt="" />
-      <img src="./img/our store/store-2.png" alt="" />
-      <img src="./img/our store/store-3.png" alt="" />
-      <img src="./img/our store/store-4.png" alt="" />
-    </section>
+  <section class="our-store">
+    <h2 class="our-store__title">OUR STORE</h2>
+    <p class="our-store__description">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi expedita dolore atque
+      veniam minima natus!
+    </p>
+    <button class="btn btn-primary" type="button">SHOP NOW</button>
 
+    <div class="our-store__img-1"></div>
+    <div class="our-store__img-2"></div>
+    <div class="our-store__img-3"></div>
+    <div class="our-store__img-4"></div>
+  </section>
 
-    <!--  NEW PRODUCTS  -->
+  <!--  NEW PRODUCTS  -->
 
-    <section class="section new-products">
-      <h2 class="section-title">NEW PRODUCTS</h2>
+  <section class="new-products">
+    <h2 class="new-products__title">NEW PRODUCTS</h2>
 
-      <div class="container products">
-        <div class="product-card">
-          <img src="./img/new products/newproduct-1.jpg" alt="" />
-          <p>Lorem ipsum dolor sit.</p>
-          <button class="btn buy">BUY</button>
-        </div>
-
-        <div class="product-card">
-          <img src="./img/new products/newproduct-1.jpg" alt="" />
-          <p>Lorem ipsum dolor sit.</p>
-          <button class="btn buy">BUY</button>
-        </div>
-        
-        <div class="product-card">
-          <img src="./img/new products/newproduct-1.jpg" alt="" />
-          <p>Lorem ipsum dolor sit.</p>
-          <button class="btn buy">BUY</button>
-        </div>
+    <div class="products-box">
+      <div class="card">
+        <img class="card__img" src="./img/new-products/newproduct-1.jpg" alt="" />
+        <p class="card__description">Lorem ipsum dolor sit.</p>
+        <button class="card__btn buy">BUY</button>
       </div>
 
-      <button class="btn-secondary">MORE<i class="fas fa-right-arrow"></i></button>
-    </section>
-
-    
-    <!--  ABOUT US  -->
-
-    <section class="section about-us">
-      <div class="about-us">
-        <h2 class="section-title">ABOUT US</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta possimus repellat reprehenderit voluptates laudantium
-        blanditiis provident soluta eligendi nobis voluptatibus minima nisi recusandae, at ea ipsum assumenda quibusdam vitae
-        pariatur.</p>
-        <button class="btn-tertiary">READ MORE</button>
+      <div class="card">
+        <img class="card__img" src="./img/new-products/newproduct-1.jpg" alt="" />
+        <p class="card__description">Lorem ipsum dolor sit.</p>
+        <button class="card__btn buy">BUY</button>
       </div>
 
-      <div class="garden-area">
-        <img src="./img/about us/garden-area.jpg" alt="">
-        <i class="fas fa-play-circle" aria-hidden="true"></i>
-        <h3>DISCOVER OUR GARDEN AREA</h3>
+      <div class="card">
+        <img class="card__img" src="./img/new-products/newproduct-1.jpg" alt="" />
+        <p class="card__description">Lorem ipsum dolor sit.</p>
+        <button class="card__btn buy">BUY</button>
       </div>
-    </section>
+    </div>
 
-    <section class="section featured-products">
-      <h2 class="section-title">FEATURED PRODUCTS</h2>
+    <button class="btn btn-secondary">
+      MORE
+      <span style="width: 8px;"></span>
+      <i class="fas fa-arrow-right"></i>
+    </button>
+  </section>
 
-      <div class="container products">
-        <div class="product-card">
-          <img src="./img/featured/featured-1.jpg" alt="" />
-          <p>Lorem ipsum dolor sit.</p>
-          <button class="btn buy">BUY</button>
-        </div>
-      
-        <div class="product-card">
-          <img src="./img/featured/featured-1.jpg" alt="" />
-          <p>Lorem ipsum dolor sit.</p>
-          <button class="btn buy">BUY</button>
-        </div>
-      
-        <div class="product-card">
-          <img src="./img/featured/featured-1.jpg" alt="" />
-          <p>Lorem ipsum dolor sit.</p>
-          <button class="btn buy">BUY</button>
-        </div>
-      </div>
-      
-      <button class="btn-secondary">MORE<i class="fas fa-right-arrow"></i></button>
-    </section>
+  <!--  GARDEN AREA  -->
 
+  <section class="garden-area">
+    <i class="garden-area__icon fas fa-play-circle fa-4x" aria-hidden="true"></i>
+    <h2 class="garden-area__title">DISCOVER OUR GARDEN AREA</h2>
+  </section>
 
-    <!--  LATEST NEWS  -->
+  <!--  ABOUT US -->
 
-    <section class="section latest-news">
-      <h2 class="section-title">LATEST NEW</h2>
+  <section class="about-us">
+    <h2 class="about-us__title">ABOUT US</h2>
+    <p class="about-us__description">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta possimus repellat
+      reprehenderit voluptates laudantium blanditiis provident soluta eligendi nobis voluptatibus
+      minima nisi recusandae, at ea ipsum assumenda quibusdam vitae pariatur.
+    </p>
+    <button class="btn btn-tertiary">
+      READ MORE
+      <span style="width: 8px;"></span>
+      <i class="fas fa-arrow-right"></i>
+    </button>
+  </section>
 
-      <div class="container news">
-        <div class="news-card">
-          <img src="./img/latest news/blog-news.jpg" alt="" />
-          <h4 class="news-title">LOREM IPSUM DOLOR SIT</h4>
-          <p class="news-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta culpa saepe id impedit
-            tenetur libero.
-          </p class="news-description">
-          <p class="date-published"></p>
-        </div>
-        <div class="news-card">
-          <img src="./img/latest news/blog-news.jpg" alt="" />
-          <h4 class="news-title">LOREM IPSUM DOLOR SIT</h4>
-          <p class="news-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta culpa saepe id impedit
-            tenetur libero.
-          </p>
-          <p class="date-published"></p>
-        </div>
-        <div class="news-card">
-          <img src="./img/latest news/blog-news.jpg" alt="" />
-          <h4 class="news-title">LOREM IPSUM DOLOR SIT</h4>
-          <p class="news-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta culpa saepe id impedit
-            tenetur libero.
-          </p>
-          <p class="date-published"></p>
-        </div>
+  <!--  FEATURED PRODUCTS  -->
+
+  <section class="featured-products">
+    <h2 class="featured-products__title">FEATURED PRODUCTS</h2>
+
+    <div class="products-box">
+      <div class="card">
+        <img class="card__img" src="./img/featured-products/featured-1.jpg" alt="plant" />
+        <p class="card__description">Lorem ipsum dolor sit.</p>
+        <button class="card__btn">BUY</button>
       </div>
 
-      <button class="btn-secondary">MORE<i class="fas fa-right-arrow"></i></button>
-    </section>
+      <div class="card">
+        <img class="card__img" src="./img/featured-products/featured-1.jpg" alt="plant" />
+        <p class="card__description">Lorem ipsum dolor sit.</p>
+        <button class="card__btn">BUY</button>
+      </div>
 
+      <div class="card">
+        <img class="card__img" src="./img/featured-products/featured-1.jpg" alt="plant" />
+        <p class="card__description">Lorem ipsum dolor sit.</p>
+        <button class="card__btn">BUY</button>
+      </div>
+    </div>
 
-    <!--  NEWSLETTER  -->
+    <button class="btn btn-secondary">
+      MORE
+      <span style="width: 8px;"></span>
+      <i class="fas fa-arrow-right"></i>
+    </button>
+  </section>
 
-    <section class="section newsletter">
-      <h2 class="section-title">NEWSLETTER</h2>
-      <form>
-        <input type="email" placeholder="EMAIL"/>
-        <button class="btn-primary" type="submit">SUBMIT</button>
-      </form>
-    </section>
+  <!--  LATEST NEWS  -->
 
-    <footer></footer>
-  </body>
+  <section class="latest-news">
+    <h2 class="latest-news__title">LATEST NEWS</h2>
+
+    <div class="news-box">
+      <div class="card">
+        <img class="card__img" src="./img/latest-news/blog-news.jpg" alt="" />
+        <h4 class="card__title">LOREM IPSUM DOLOR SIT</h4>
+        <p class="card__description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta culpa saepe id impedit
+          tenetur libero.
+        </p>
+        <p class="card__date">01/06/2019</p>
+      </div>
+
+      <div class="card">
+        <img class="card__img" src="./img/latest-news/blog-news.jpg" alt="" />
+        <h4 class="card__title">LOREM IPSUM DOLOR SIT</h4>
+        <p class="card__description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta culpa saepe id impedit
+          tenetur libero.
+        </p>
+        <p class="card__date">01/06/2019</p>
+      </div>
+
+      <div class="card">
+        <img class="card__img" src="./img/latest-news/blog-news.jpg" alt="" />
+        <h4 class="card__title">LOREM IPSUM DOLOR SIT</h4>
+        <p class="card__description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta culpa saepe id impedit
+          tenetur libero.
+        </p>
+        <p class="card__date">01/06/2019</p>
+      </div>
+    </div>
+
+    <button class="btn btn-secondary">
+      MORE
+      <span style="width: 8px;"></span>
+      <i class="fas fa-arrow-right"></i>
+    </button>
+  </section>
+
+  <!--  NEWSLETTER  -->
+
+  <section class="newsletter">
+    <h2 class="newsletter__title">NEWSLETTER</h2>
+
+    <form class="form">
+      <input class="form__input" type="text" />
+      <button class="form__btn">SUBMIT</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p class="footer__text">
+      &copy; 2020 Greenify. All rights reserved.
+    </p>
+  </footer>
+
+</body>
+
 </html>

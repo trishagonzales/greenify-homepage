@@ -1,0 +1,77 @@
+.navigation {
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto auto;
+
+	&__logo {
+    text-align: center;
+    margin: .5em 0;
+	}
+
+	#menu-toggler {
+    display: none;
+  }
+
+	&__menu-icon {
+    display: none;
+    justify-self: end;
+    align-self: center;
+    cursor: pointer;
+	}
+
+	.menu {
+    display: flex;
+    justify-content: center;
+
+		&__item {
+			padding: .7em .9em;
+		}
+	}
+}
+
+@mixin transitionToggle {
+  transition: height ease-out 200ms;
+}
+
+//  MOBILE SCREENS
+@media only screen and (max-width: $breakpoint-md) {
+	.navigation {
+    padding-left: 3%;
+    padding-right: 3%;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto auto;
+    grid-template-areas:
+      'logo menu-icon'
+      'menu-items menu-items'  
+    ;
+
+		&__logo {
+      grid-area: logo;
+      justify-self: start;
+		}
+
+		&__menu-icon {
+      grid-area: menu-icon;
+      justify-self: end;
+      display: inline-block;
+		}
+
+		.menu {
+      grid-area: menu-items;
+      display: flex;
+      flex-direction: column;
+      height: 0;
+      @include transitionToggle;
+      overflow-y: hidden;
+
+      &__item {
+        overflow-y: hidden;
+      }
+    }
+    
+    
+		#menu-toggler:checked ~ .menu {
+      height: 300px;
+		}
+	}
+}

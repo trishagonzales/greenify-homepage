@@ -8,12 +8,18 @@
 
 //  COMPONENTS
 @import './components/button';
-@import './components/form';
 @import './components/product-card';
+@import './components/news-card';
 
 //  LAYOUT
-@import './layout/header';
+@import './layout/global';
+@import './layout/navigation';
 @import './layout/showcase';
-
-//  PAGES
-@import './pages/home';
+@import './layout/our-store';
+@import './layout/new-products';
+@import './layout/garden-area';
+@import './layout/about-us';
+@import './layout/featured-products';
+@import './layout/latest-news';
+@import './layout/newsletter';
+@import './layout/footer';

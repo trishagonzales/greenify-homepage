@@ -1,0 +1,98 @@
+@mixin imageCover {
+  background-size: cover;
+  background-position: center;
+}
+
+.our-store {
+  @include marginTop;
+  padding-bottom: 3%;
+  display: grid;
+  justify-content: center;
+  width: 760px;
+  height: auto;
+
+  grid-template-columns: 360px 1fr 1fr;
+  grid-template-rows: 60px 80px 60px 200px;
+  grid-template-areas: 
+    'title   img1 img2'
+    'descrip img1 img2'
+    'btn     img1 img2'
+    'img3    img4 img4'
+  ;
+
+  &__title { 
+    grid-area: title; 
+    justify-self: start;
+  }
+
+  &__description { 
+    grid-area: descrip; 
+    max-width: 300px;
+    line-height: 1.5em;
+  }
+
+  .btn {
+    grid-area: btn;
+    justify-self: start;
+    align-self: end;
+  }
+
+  div {
+    margin: .5em;
+  }
+  
+  &__img-1 { 
+    background: url(../../img/our-store/store-1.jpg);
+    grid-area: img1;
+    @include imageCover;
+  }
+  
+  &__img-2 { 
+    background: url(../../img/our-store/store-2.png);
+    grid-area: img2;
+    @include imageCover;
+  }
+  
+  &__img-3 { 
+    background: url(../../img/our-store/store-3.png) no-repeat;
+    grid-area: img3;
+    background-size: contain;
+  }
+  
+  &__img-4 { 
+    background-image: url(../../img/our-store/store-4.jpg);
+    grid-area: img4; 
+    @include imageCover;
+  }
+}
+
+@media only screen and (max-width: $breakpoint-md) {
+  .our-store {
+    justify-items: center;
+    width: 80%;
+
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2, auto) repeat(3, 300px) auto;
+    grid-template-areas: 
+      'title'
+      'descrip'
+      'img3'
+      'img1'
+      'img2'
+      'btn'
+    ;
+    gap: 1em;
+
+    h2, p { width: 100%; }
+
+    div {
+      min-width: 90%;
+    }
+
+    &__img-3 { background-position: center; }
+
+    &__img-4 { display: none; }
+
+    .btn { margin: auto; }
+  }
+}

@@ -5,21 +5,33 @@
   background-size: cover;
   background-position: center;
   text-align: center;
+
+  display: flex;
+  justify-content: center;
   position: relative;
 
-  .showcase-title {
-    min-width: 80%;
+  &__title {
+    font-size: 4rem;
+    min-width: 90%;
     max-width: 100%;
     position: absolute;
-    top: 15%;
+    top: 10%;
     left: 50%;
     transform: translateX(-50%);
   }
   
   .btn-primary {
     position: absolute;
-    bottom: 5%;
-    left: 50%;
-    transform: translateX(-50%);
+    bottom: 10%;
+    font-size: 1rem;
+    padding: .8em 2em;
+  }
+}
+
+@media only screen and (max-width: $breakpoint-md) {
+  .showcase {
+    &__title {
+      font-size: 3rem;
+    }
   }
 }

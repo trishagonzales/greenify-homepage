@@ -1,0 +1,60 @@
+body {
+  display: grid;
+  justify-items: center;
+    
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(8, auto);
+  grid-template-areas: 
+    'navbar   navbar'
+    'showcase showcase'
+    'store    store'
+    'newProd  newProd'
+    'garden   about'
+    'featured featured'
+    'newsBlog newsBlog'
+    'newsltr  newsltr'
+    'footer   footer'
+  ;
+
+  .navigation { grid-area: navbar; }
+
+  .showcase { grid-area: showcase; }
+
+  .our-store { grid-area: store; }
+
+  .new-products { grid-area: newProd; }
+
+  .garden-area { grid-area: garden; }
+
+  .about-us { grid-area: about; }
+
+  .featured-products { grid-area: featured; }
+
+  .latest-news { grid-area: newsBlog; }
+
+  .newsletter { grid-area: newsltr; }
+
+  .footer { grid-area: footer; }
+
+  h2 {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: $breakpoint-lg) {
+  body {
+    grid-template-columns: 100%;
+    grid-template-areas: 
+      'navbar'
+      'showcase'
+      'store'
+      'newProd'
+      'garden'
+      'about'
+      'featured'
+      'newsBlog'
+      'newsltr'
+      'footer'
+    ;
+  }
+}

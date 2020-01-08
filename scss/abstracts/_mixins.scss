@@ -1,0 +1,28 @@
+@mixin transitionBtnHover {
+  transition-property: box-shadow, transform;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+}
+
+@mixin transitionBackground {
+  transition-property: background, background-color;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+}
+
+@mixin transitionCardHover {
+  transition-property: box-shadow, border-color;
+  transition-duration: 300ms;
+  transition-timing-function: ease-out;
+}
+
+@mixin hoizontalCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin marginTop {
+  margin-top: 6%;
+}

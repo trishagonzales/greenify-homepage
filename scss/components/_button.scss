@@ -1,9 +1,16 @@
 @mixin button {
-  padding: 0.7em 1.2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0.7em 1.5em;
   margin: 0.3em;
   border-width: 3px;
   border-style: solid;
   border-radius: 5px;
+
+  @include transitionBackground;
+  @include transitionBtnHover;
 }
 
 .btn-primary {
@@ -11,20 +18,38 @@
   color: white;
   background-color: $primary;
   border-color: $primary;
-  border-radius: 25px;
-  box-shadow: 0 0 6 $primary;
+  border-radius: 5em;
+  box-shadow: 0 0 10px $boxShadow;
+  &:hover {
+    // box-shadow: 0 0 40px $boxShadow;
+    transform: scale(1.05);
+  }
 }
 
 .btn-secondary {
   @include button;
   color: $primary;
-  background-color: none;
+  width: 200px;
+  background: none;
   border-color: $foreground-light;
+  &:hover {
+    background: darken($color: white, $amount: 4);
+  }
 }
 
 .btn-tertiary {
   @include button;
   color: $primary;
+  padding: .7em 0;
   background: none;
   border: none;
+  border-bottom: 1px solid $foreground-default;
+  border-radius: 0;
+}
+
+@media only screen and (max-width: $breakpoint-sm) {
+  .btn-primary, .btn-secondary {
+    width: 75vw;
+    margin: auto;
+  }
 }
