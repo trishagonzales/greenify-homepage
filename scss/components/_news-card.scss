@@ -12,7 +12,12 @@
   .card {
     width: 280px;
     margin: 1em;
-    box-shadow: 0 0 10px $boxShadow;
+    cursor: pointer;
+    @include transitionCardHover;
+
+    &:hover {
+      box-shadow: 0 0 10px $boxShadow;
+    }
 
     &__img {
       width: 100%;

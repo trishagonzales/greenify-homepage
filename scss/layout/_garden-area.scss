@@ -16,6 +16,11 @@
     position: absolute;
     top: 35%;
     color: white;
+    cursor: pointer;
+    transition: transform ease-out 200ms;
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 
   &__title {
